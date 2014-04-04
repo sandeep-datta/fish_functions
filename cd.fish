@@ -18,6 +18,8 @@ function cd --description 'Change directory'
         return $status
     end
 
+    #cd to the base directory when a file name is
+    #given as the cd command's target
     if test -f $argv[1]
       builtin cd (dirname $argv[1])
     else
