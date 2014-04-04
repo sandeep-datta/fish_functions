@@ -1,3 +1,3 @@
 function cls
-	echo -en "\ec"
+    echo -en "\ec"
 end
